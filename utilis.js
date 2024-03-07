@@ -2,16 +2,16 @@
 
 // Get HTML element by id
 export function getElement(selector, scope = document) {
-    return scope.getElement(sell);
+    return scope.getElementById(selector);
   }
   
   // Select HTML element
-  export function select(sell, scope = document) {
+  export function select(selector, scope = document) {
     return scope.querySelector(selector);
   }
   
   // Get a list of HTML elements as an array
-  export function selectAll(sell, scope = document) {
+  export function selectAll(selector, scope = document) {
     return [...scope.querySelectorAll(selector)];
   }
 
